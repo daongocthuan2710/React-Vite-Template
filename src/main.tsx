@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-
 // Librarys
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
@@ -12,12 +11,6 @@ import { store } from './store';
 
 // Style
 import './index.css';
-
-// Navigation
-import { ConnectedRouter } from 'connected-react-router';
-
-// Utils
-import { history } from './utils';
 
 // Components
 import App from './app/modules';
@@ -38,13 +31,11 @@ const queryClient = new QueryClient({
 root.render(
   // <React.StrictMode>
   <Provider store={store}>
-    {/* <ConnectedRouter history={history}> */}
     <QueryClientProvider client={queryClient}>
       <App />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
-    {/* </ConnectedRouter> */}
-  </Provider>
+  </Provider>,
   // </React.StrictMode>
 );
 

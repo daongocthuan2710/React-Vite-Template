@@ -1,3 +1,3 @@
-export * from './ReactQuery';
+export * from './queries';
 export * from './common';
 export * from './routes';

@@ -35,9 +35,7 @@ export class Card extends Model<TCard> {
   }
 
   get position() {
-    return typeof this.model.position === 'number'
-      ? this.model.position
-      : undefined;
+    return typeof this.model.position === 'number' ? this.model.position : undefined;
   }
 
   set position(value: number | undefined) {
