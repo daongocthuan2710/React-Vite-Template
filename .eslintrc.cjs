@@ -15,12 +15,14 @@ module.exports = {
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['prettier'],
   rules: {
+    'no-unused-vars': ['warn', { vars: 'all' }],
     'prettier/prettier': ['error', prettierOptions],
   },
   overrides: [
     {
       files: ['**/*.ts?(x)'],
       rules: {
+        'no-unused-vars': ['warn', { vars: 'all' }],
         'prettier/prettier': ['warn', prettierOptions],
       },
     },

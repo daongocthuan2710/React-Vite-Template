@@ -43,7 +43,7 @@ export const counterSlice = createSlice({
       state.value += action.payload;
     },
 
-    incrementSaga: (state, action: PayloadAction<number>) => {
+    incrementSaga: state => {
       state.status = 'loading';
     },
 
