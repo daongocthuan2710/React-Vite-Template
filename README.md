@@ -1,1 +1,10 @@
-<h1 align="center">Admin Layout</h1>
+- **Language Programming:** *Typescript*
+- **Framework/Library:** *ReactJs + Vite*
+- **Library:** *Ant Design, Lodas*
+- **Client State:** *Redux Toolkit + Redux Saga*
+- **Server State:** *TanStack*
+- **Format Code:** *Prettier*
+- **Check Code*:** ESLint ( use in ECMAScript/JavaScript/Typescript )*
+    - yarn add prettier eslint-plugin-prettier eslint-config-prettier -D
+- **Package Manager:** *Yarn*
+- **Testing:** *Jest*
